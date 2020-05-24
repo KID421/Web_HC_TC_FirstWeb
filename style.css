@@ -229,3 +229,9 @@ footer {
     background: #252525;
     color: white;
 }
+
+footer span {
+    font-family: Ngaan;
+    font-size: 20px;
+    padding: 10px;
+}
