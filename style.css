@@ -97,3 +97,17 @@ section {
     width: 1200px;
     margin: 0 auto;
 }
+
+#about > div {
+    display: grid;
+    grid-template-columns: 60% 40%;
+    grid-gap: 20px;
+}
+
+#about > div .img {
+    background-image: url(./img/about.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+}
