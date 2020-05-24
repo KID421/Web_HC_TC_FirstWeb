@@ -166,3 +166,17 @@ section hr {
     text-align: center;
     line-height: 2.5;
 }
+
+#contact form {
+    width: 80%;
+    margin: 0 auto;
+}
+
+#contact form div {
+    display: grid;
+    grid-template-columns: 40% 60%;
+}
+
+#contact form textarea {
+    grid-column: 1 / 3;
+}
