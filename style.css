@@ -14,8 +14,7 @@
 
 /* 導覽列 */
 nav {
-    display: grid;
-    grid-template-columns: 50% 50%;
+    
     padding: 30px 100px;
     /* 定位：固定 */
     position: fixed;
@@ -25,6 +24,13 @@ nav {
     color: white;
     width: 100%;
     box-shadow: 0 0 3px 3px rgba(0, 0, 0, 0.5);
+}
+
+nav > div {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    width: 1200px;
+    margin: 0 auto;
 }
 
 #logo span {
@@ -49,6 +55,7 @@ nav {
     font-size: 20px;
     /* 轉場：時間 */
     transition: 0.3s;
+    text-align: right;
 }
 
 /* :hover 滑入 */
@@ -157,9 +164,18 @@ section hr {
 #news a {
     text-decoration: none;
     color: #252525;
+    transition: 0.5s;
+}
+
+#news a:hover {
+    color: indianred;
 }
 
 /* 聯絡我們 */
+#contact {
+    text-align: center;
+}
+
 #contact p {
     width: 80%;
     margin: 0 auto;
@@ -175,8 +191,31 @@ section hr {
 #contact form div {
     display: grid;
     grid-template-columns: 40% 60%;
+    grid-gap: 20px;
+    padding-right: 20px;
 }
 
 #contact form textarea {
     grid-column: 1 / 3;
+    height: 200px;
+}
+
+#contact input {
+    text-align: center;
+    padding: 10px;
+}
+
+#contact input[type="submit"] {
+    width: 300px;
+    background-color: #252525;
+    color: white;
+    margin: 10px 0;
+    border: 0;
+    transition: 0.3s;
+}
+
+#contact input[type="submit"]:hover {
+    background-color: white;
+    color: #252525;
+    border: 1px solid #252525;
 }
